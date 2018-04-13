@@ -1,4 +1,10 @@
-.body{
+body{
+  background-color: coral;
+  /*padding-top: 70px;*/
+}
 
-  padding-top: 70px;
+.nav li{
+
+  display: inline;
+
 }
