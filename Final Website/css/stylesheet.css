@@ -1,23 +1,34 @@
 body{
-  background-color: midnightblue;
+  background-color: #0c0924;
   /*padding-top: 70px;*/
 }
 
 
 .nav li{
     float: left;
-    display: block;
+    margin-top: 50px;
+    margin-left: 125px;
+
+    text-align: center;
+    list-style-type: none;
     width: 280px;
 
     font-family: SignPainter-HouseScript;
     font-size: 50px;
     color: white;
     padding: 50px, 0px, 200px, 200px;
+    border-top: 1px solid #D3C392; /*Adjust as desired.*/
+    border-bottom: 1px solid #D3C392; /*Adjust as desired.*/
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
-.nav a{
 
+
+
+.nav a{
+  display: inline-block;
   color: white;
   text-decoration: none;
       border: 7px;
@@ -34,6 +45,62 @@ body{
     color: coral;
 
 }
+
+h2{
+
+text-align: center;
+
+font-family: SignPainter-HouseScript;
+color: white
+}
+
+.contactText{
+  color: white;
+
+
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+
+#buzz{
+  color: white;
+
+}
+
+.aboutText{
+  color: white;
+
+
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 70px;
+  text-align: center;
+
+}
+
+
+#buzz{
+
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 50px;
+
+
+
+}
+
+.container{
+    margin-top: 170px;
+
+
+}
+
+
+
 
 h1{
 

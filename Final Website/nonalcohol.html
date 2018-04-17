@@ -11,22 +11,110 @@
 
 
   <body>
-  <h1> change  </h1>
-
+  <h1> How to have fun without a drink!  </h1>
     <div class = "nav">
-
     <ul>
-
       <li><a href="index.html">Welcome</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="alcohol.html">Fun with drinks!</a></li>
-      <li><a href="nonalcohol.html">Fun without drinks</a></li>
-
+      <li><a href="nonalcohol.html">Activities</a></li>
     </ul>
-
-
         </div>
 
+  <div id="buzz">
+  <div class="row">
+
+    <div class="col-sm-4">
+      <img class="img-responsive, img-circle"
+        <a href="default.asp">
+          <img src='./worlds-end.jpg' alt="worlds-end" width="400px">
+        </a>
+      <blockquote>
+        <p>The Worlds End Pub
+          <small>A fun and alternative way to let off steam at the weekend. Fully equipped retro gaming arcade in a the World`s End Pub.
+          60-61 London Road, Brighton, BN1 4JE</small></p>
+      </blockquote>
+    </div>
+
+    <div class="col-sm-4">
+      <img class="img-responsive, img-circle"
+        <a href="default.asp">
+          <img src='./komedia.jpg'alt="Komedia" width="400px">
+        </a>
+      <blockquote>
+        <p>Komedia <small> More laughs guarenteed at Komedia Brighton than on any other conventional night out. Enjoy the fun with or without alcohol! 44-47 Gardner Street, Brighton, East Sussex, BN1 1UN</small></p>
+      </blockquote>
+    </div>
+
+    <div class="col-sm-4">
+      <img class="img-responsive, img-circle">
+        <a href="default.asp">
+          <img src='./beach.jpg'alt="Brighton Beach" width="400px">
+        </a>
+      <blockquote>
+        <p>Brighton Beach <small>What a fantastic summer activity, why go inside somewhere crowded when there is the seaside...and it's free!</small></p>
+      </blockquote>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-4">
+      <img class="img-responsive, img-circle"
+        <a href="default.asp">
+          <img src='./VR.jpg' alt="Virtual reality" width="400px">
+        </a>
+      <blockquote>
+        <p>VR Concept Brighton
+          <small>Bored of Brighton nights? Get ready to be transported into another world with a virtual reality gaming pod at The Worlds End pub in Brighton</small></p>
+      </blockquote>
+    </div>
+
+    <div class="col-sm-4">
+      <img class="img-responsive, img-circle"
+        <a href="default.asp">
+          <img src='./escape-game.jpg'alt="escape game" width="400px">
+        </a>
+      <blockquote>
+        <p>Escape Games <small> What about an exciting hour in an escape room? Or will that hour be forever? 21 Regency Square Brighton East Sussex BN1 2FH
+ </small></p>
+      </blockquote>
+    </div>
+
+    <div class="col-sm-4">
+      <img class="img-responsive, img-circle">
+        <a href="default.asp">
+          <img src='./pier.jpg'alt="brighton pier" width="400px">
+        </a>
+      <blockquote>
+        <p>Brighton Pier <small> If you need a bit of adrenalin, go and have some upside down fun at Brighton Pier! Don`t miss out on the roller coaster of your life!
+          Madeira Dr, Brighton BN2 1TW </small></p>
+      </blockquote>
+    </div>
+
+  </div>
+
+  </div>
+
+
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var hove = {lat:50.835396, lng: -0.170647};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: hove
+            });
+            var marker = new google.maps.Marker({
+              position: hove,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbgFj3GkzjTkVCUnGs_h0S6XSEwoakPyg&callback=initMap">
+        </script>
+            </div>
 
 
   </body>

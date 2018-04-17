@@ -7,8 +7,15 @@
     <meta name ="viewport" content='width=device-width,initial-initial scale=1.0'>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
- </head>
 
+
+ <style>
+      #map {
+       height: 400px;
+       width: 100%;
+      }
+   </style>
+</head>
 
   <body>
   <h1>About</h1>
@@ -19,18 +26,49 @@
 
       <li><a href="index.html">Welcome</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="alcohol.html">Fun with drinks!</a></li>
-      <li><a href="nonalcohol.html">Fun without drinks</a></li>
+      <li><a href="nonalcohol.html">Activities</a></li>
 
     </ul>
     </div>
     <div class = "aboutText">
-      <p>Hangunder is the site to go to if you are a night owl mood don’t necessarily want to involve alcohol or a night club.
+      <p>Hangunder is the site to go to if you are a night owl who doesn't necessarily want to involve alcohol or a night club in their night out.
 Brighton is a place full of different sites and activities to do at night as the city comes alive.
 We have put together some top picks of what we think you’ll love to do!</p>
 
     </div>
 
+    <h2> Contact: </h2>
+      <div class = "contactText">
+        <p>Hang Under Office</p>
+        <p>University of Sussex</p>
+        <p>Falmer </p>
+        <p>BN19BJ<p>
+
+        <p></p>
+        <p>Tel: 02039938766 </p>
+
+
+      </div>
+
+
+
+    <div id="map"></div>
+        <script>
+          function initMap() {
+            var sussex = {lat: 50.865021, lng:  -0.088596};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 17,
+              center: sussex
+            });
+            var marker = new google.maps.Marker({
+              position: sussex,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbgFj3GkzjTkVCUnGs_h0S6XSEwoakPyg&callback=initMap">
+        </script>
 
 
   </body>
